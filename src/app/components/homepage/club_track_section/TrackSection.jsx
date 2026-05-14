@@ -1,12 +1,13 @@
 import HomeHeadlines from "../HomeHeadlines";
 import TrackPlayer from "./TrackPlayer";
 import Artists from "./Artists";
+import KiaTrackPlayer from "./KiaTrackPlayer";
 
 const TrackSection = () => {
   return (
     <section>
       <HomeHeadlines text="night club track" />
-      <TrackPlayer />
+      <KiaTrackPlayer />
       <Artists />
     </section>
   );
