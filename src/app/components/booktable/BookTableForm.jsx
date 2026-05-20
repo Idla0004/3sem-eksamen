@@ -94,7 +94,6 @@ const BookTableForm = ({
       setMessage(
         "Thank you for submitting your booking!",
       );
-      reset();
     } else {
       setMessage(
         "Ooops! We failed to submit your booking...",
