@@ -71,6 +71,10 @@ export async function ListEventInfo({
       </section>
     );
   } catch (error) {
+    console.error(
+      "Error in ListEventInfo:",
+      error,
+    );
     return (
       <p>Failed to load upcoming events...</p>
     );
