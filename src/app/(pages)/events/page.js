@@ -1,12 +1,16 @@
 import { ListEventInfo } from "@/app/components/events/ListEventInfo";
 import Headline from "@/app/components/Headline";
-import Link from "next/link";
+import { Suspense } from "react";
 
-export default function Events() {
+export default function Events({ searchParams }) {
   return (
     <main>
       <Headline text="events" />
-      <ListEventInfo />
+      <Suspense fallback="Loading events...">
+        <ListEventInfo
+          searchParams={searchParams}
+        />
+      </Suspense>
     </main>
   );
 }
