@@ -151,23 +151,6 @@ main {
   }
 }
 
-/* featured card scroller */
-
-/* ul.full-width-scroller {
-  scroll-padding-inline: 2rem;
-  overflow-inline: auto;
-  scroll-snap-type: inline mandatory;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  height: fit-content;
-
-  & li {
-    flex: 1 0 500px;
-    scroll-snap-align: center;
-  }
-} */
-
 ul.full-width-scroller {
   list-style: none;
   display: block;
@@ -313,19 +296,11 @@ ul.full-width-scroller li {
 /* SEKTION 4: NIGHT CLUB TRACK */
 
 ul.artists-scroller {
-  /* scroll-padding-inline: 2rem; */
-  /* overflow-inline: auto;
-  scroll-snap-type: inline mandatory; */
   list-style: none;
   display: flex;
   height: fit-content;
   align-items: center;
   place-content: center;
-
-  /* & li {
-    flex: 1 0 250px;
-    scroll-snap-align: center;
-  } */
 }
 
 .track-active-overlay {
@@ -391,13 +366,11 @@ ul.artists-scroller {
     flex-wrap: wrap;
   }
 
-  .artists-scroller {
-    display: block;
-    min-block-size: 150px;
-
-    img {
-      min-block-size: 150px;
-    }
+  .artists-scroller,
+  .track-active-overlay {
+    display: flex;
+    min-height: max-content;
+    min-width: max-content;
   }
 }
 

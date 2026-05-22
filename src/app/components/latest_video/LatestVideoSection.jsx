@@ -1,5 +1,4 @@
 import HomeHeadlines from "../homepage/HomeHeadlines";
-import VideoComponent from "./VideoComponent";
 import { Suspense } from "react";
 import VideoContainer from "./VideoContainer";
 
