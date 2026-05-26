@@ -12,12 +12,14 @@ const TestimonialSlider = ({ testimonials }) => {
   const activeTestament = Number(
     searchParams.get("testimonials") || "0",
   );
-
+  // AI HELPED WITH THIS
+  // Se synopsis om AI brug: TestimonialsSlider.jsx
   const handleButtonClick = (targetIndex) => {
     router.push(`?testimonials=${targetIndex}`, {
       scroll: false,
     });
   };
+  /////////
 
   return (
     <div className="flex flex-col items-center w-full z-1 my-medium ">
@@ -38,7 +40,8 @@ const TestimonialSlider = ({ testimonials }) => {
       </ul>
 
       <div className="flex justify-center gap-4 w-full mt-small-medium">
-        {/* AI HELPED WITH SYNTAX */}
+        {/* AI HELPED WITH THIS */}
+        {/*Se synopsis om AI brug: TestimonialsSlider.jsx */}
         {testimonials.map((_, index) => (
           <button
             key={index}
@@ -53,6 +56,7 @@ const TestimonialSlider = ({ testimonials }) => {
             aria-label={`Show testimonial ${index + 1}`}
           />
         ))}
+        {/* //////// */}
       </div>
     </div>
   );

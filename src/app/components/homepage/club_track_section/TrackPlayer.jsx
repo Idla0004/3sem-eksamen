@@ -66,6 +66,8 @@ const TrackPlayer = () => {
     }
   }, [isPlaying, currentSong.src]);
 
+  // AI HELPED WITH THIS //
+  //  Se synopsis om AI brug: TrackPlayer.jsx
   const onPlaying = () => {
     if (audioElem.current) {
       setCurrentTime(
@@ -79,6 +81,7 @@ const TrackPlayer = () => {
       setDuration(audioElem.current.duration);
     }
   };
+  ///////////
 
   return (
     <div className="track-player-container w-full max-w-250 m-auto select-none">

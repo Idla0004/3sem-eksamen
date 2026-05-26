@@ -60,6 +60,7 @@ const Player = ({
   };
 
   // AI HELPED WITH THIS //
+  //  Se synopsis om AI brug: Player.jsx
   const handleVolumeChange = (e) => {
     const rawVolume = parseFloat(e.target.value);
 
@@ -92,6 +93,7 @@ const Player = ({
   /////////////////
 
   // AI HELPED WITH THIS //
+  //  Se synopsis om AI brug: Player.jsx
   const formatTime = (timeInSeconds) => {
     if (isNaN(timeInSeconds)) return "0:00";
     const minutes = Math.floor(
@@ -158,6 +160,7 @@ const Player = ({
         </div>
         <div className="volume-container flex items-center gap-2 group text-2xl pt-5 m-auto md:pt-0 md:m-0">
           {/* AI HELPED WITH THIS */}
+          {/* Se synopsis om AI brug: Player.jsx*/}
           <button
             onClick={toggleMute}
             className="focus:outline-none text-2xl hover:text-trackbg"

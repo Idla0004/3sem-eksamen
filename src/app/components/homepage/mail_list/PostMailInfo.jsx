@@ -15,6 +15,7 @@ export async function PostMailInfo({ email }) {
       },
     );
     /* AI HELPED WITH THIS: */
+    // Se synopsis om AI brug: PostMailInfo.jsx
     if (!response.ok) {
       if (response.status === 409) {
         return {

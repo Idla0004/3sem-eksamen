@@ -6,6 +6,7 @@ export async function ListEventInfo({
 }) {
   "use server";
   /* AI HJALP MED SYNTAKS RÆKKEFØLGE */
+  // Se synopsis om AI brug: ListEventInfo.jsx
   const getParams = await searchParams;
   const currentPage =
     Number(getParams?.page) || 1;

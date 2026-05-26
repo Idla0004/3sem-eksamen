@@ -10,6 +10,8 @@ import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 
+// AI HELPED WITH THIS //
+// Se synopsis om AI brug: GalleryLightbox
 export default function GalleryLightBox({
   initialImages,
 }) {
@@ -41,6 +43,7 @@ export default function GalleryLightBox({
     currentIndex !== null
       ? initialImages[currentIndex]
       : null;
+  ///////
 
   return (
     <div className="gallery-img-wrapper">

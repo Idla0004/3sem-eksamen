@@ -13,8 +13,10 @@ const Testiment = ({
   index,
   activeTestament,
 }) => {
+  // AI HELPED WITH THIS
+  // Se synopsis om AI brug: Testiment.jsx
   const isActive = index === activeTestament;
-
+  /////////
   return (
     <li
       className={`justify-center flex flex-col items-center gap-2 pt-small transition-all duration-250 ease-in ${isActive ? "relative flex opacity-100 translate-y-0 scale-100 z-10" : "absolute opacity-0 translate-y-4 scale-100 pointer-events-none z-0"}`}

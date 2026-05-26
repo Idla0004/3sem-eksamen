@@ -23,6 +23,7 @@ const MailForm = () => {
 
   const onSubmit = async (data) => {
     /* AI HJALP MED DETTE: MEDTAG DATA FRA POST komponent */
+    // Se synopsis om AI brug: MailForm.jsx
     const result = await PostMailInfo({
       email: data.email,
     });

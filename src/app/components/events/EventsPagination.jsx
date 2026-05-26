@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+// AI HELPED WITH THIS //
+// Se synopsis om AI brug: EventsPagination.jsx
 const EventsPagination = ({ currentPage }) => {
   const totalPages = 3;
   const pages = [1, 2, 3];
@@ -18,6 +20,7 @@ const EventsPagination = ({ currentPage }) => {
     nextButtonClass =
       "text-foreground/50 pointer-events-none";
   }
+  ////////
 
   return (
     <nav
