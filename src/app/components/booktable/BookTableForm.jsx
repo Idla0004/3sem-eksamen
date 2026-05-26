@@ -67,8 +67,6 @@ const BookTableForm = ({
     const eventId = diffPageRoute
       .split("/")
       .pop();
-    const defaultTitle =
-      document.querySelector("#default");
     if (eventId) {
       setValue("choiceNight", eventId);
     }

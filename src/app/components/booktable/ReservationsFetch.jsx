@@ -7,10 +7,11 @@ export async function ReservationsFetch({
       `${process.env.NEXT_PUBLIC_API_URL}/reservations`,
     );
 
-    /* AI HELPED WITH THIS */
-    /* se synopsis om AI brug: Book Table */
     const fetchReservations =
       await response.json();
+
+    /* AI HELPED WITH THIS */
+    /* se synopsis om AI brug: Book Table */
     const reserved = fetchReservations
       .filter(
         (eventRes) =>
