@@ -7,11 +7,7 @@ const LatestVideo = () => {
   return (
     <section className="video-section">
       <HomeHeadlines text="Latest Video" />
-      <Suspense
-        fallback={<p>Loading videos..</p>}
-      >
-        <VideoContainer />
-      </Suspense>
+      <VideoContainer />
     </section>
   );
 };

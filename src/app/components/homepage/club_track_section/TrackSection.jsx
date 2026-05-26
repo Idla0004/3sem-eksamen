@@ -7,10 +7,8 @@ const TrackSection = () => {
   return (
     <section className="track-container">
       <HomeHeadlines text="night club track" />
-      <Suspense fallback="Could not load Night Club Track player..">
-        <TrackPlayer />
-        <Artists />
-      </Suspense>
+      <TrackPlayer />
+      <Artists />
     </section>
   );
 };

@@ -5,11 +5,12 @@ import { EventComments } from "@/app/components/singleevent/EventComments";
 import EventOverview from "@/app/components/singleevent/EventOverview";
 import { Suspense } from "react";
 import Header from "@/app/components/Header";
+import Loading from "@/app/loading";
 
 const SingleEvent = ({ params }) => {
   return (
     <main>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loading />}>
         <div className="sticky-container">
           <Header />
         </div>

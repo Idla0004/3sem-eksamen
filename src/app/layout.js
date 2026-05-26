@@ -1,8 +1,9 @@
 import "./globals.css";
 import { Ubuntu } from "next/font/google";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import NoHeader from "./NoHeader";
+import Loading from "./loading";
+import { Suspense } from "react";
 
 const UbuntuSans = Ubuntu({
   variable: "--font-ubuntu-sans",
@@ -23,7 +24,9 @@ export default function RootLayout({ children }) {
     >
       <body>
         <NoHeader />
-        {children}
+        <Suspense fallback={<Loading />}>
+          {children}
+        </Suspense>
         <Footer />
       </body>
     </html>

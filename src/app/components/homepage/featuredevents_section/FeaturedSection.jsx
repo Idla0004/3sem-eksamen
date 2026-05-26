@@ -5,11 +5,9 @@ const FeaturedSection = ({ id }) => {
   return (
     <section className="featuredsection relative mt-medium pb-medium">
       <HomeHeadlines text="featured events" />
-      <Suspense>
-        <ul className="full-width-scroller justify-center list-none p-0 w-full">
-          <FeaturedSectionFetch id={id} />
-        </ul>
-      </Suspense>
+      <ul className="full-width-scroller justify-center list-none p-0 w-full">
+        <FeaturedSectionFetch id={id} />
+      </ul>
     </section>
   );
 };

@@ -6,11 +6,12 @@ import { Suspense } from "react";
 import { EventFetch } from "@/app/components/booktable/EventFetch";
 import BookEventHeadline from "@/app/components/booktable/BookEventHeadline";
 import ChooseNightForm from "@/app/components/booktable/ChooseNightForm";
+import Loading from "@/app/loading";
 
 const BookTable = ({ params }) => {
   return (
     <main>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loading />}>
         <Details params={params}></Details>
       </Suspense>
     </main>

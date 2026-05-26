@@ -8,11 +8,12 @@ import LatestVideo from "./components/latest_video/LatestVideoSection";
 import TrackSection from "./components/homepage/club_track_section/TrackSection";
 import MailSection from "./components/homepage/mail_list/MailSection";
 import Header from "./components/Header";
+import Loading from "./loading";
 
 export default function Home() {
   return (
     <main>
-      <Suspense fallback="Loading Night Club...">
+      <Suspense fallback={<Loading />}>
         <Hero />
         <div className="sticky-container">
           <Header />
