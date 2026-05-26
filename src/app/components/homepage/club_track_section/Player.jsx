@@ -102,11 +102,11 @@ const Player = ({
     const secs = Math.floor(timeInSeconds % 60);
     return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
   };
+  ///////////////////////////////
 
   const progressPercent = duration
     ? (currentTime / duration) * 100
     : 0;
-  ///////////////////////////////
 
   return (
     <div className="music-container flex flex-col text-center mx-auto px-8 w-full">

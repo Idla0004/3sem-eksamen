@@ -1,6 +1,6 @@
 import HomeHeadlines from "../HomeHeadlines";
 import { FeaturedSectionFetch } from "./FeaturedSectionFetch";
-import { Suspense } from "react";
+
 const FeaturedSection = ({ id }) => {
   return (
     <section className="featuredsection relative mt-medium pb-medium">

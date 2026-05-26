@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { TestimonialsFetch } from "./TestimonialsFetch";
 import Image from "next/image";
 

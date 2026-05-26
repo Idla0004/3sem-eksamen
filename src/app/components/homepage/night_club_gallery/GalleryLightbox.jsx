@@ -10,13 +10,14 @@ import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
 import { MdClose } from "react-icons/md";
 
-// AI HELPED WITH THIS //
-// Se synopsis om AI brug: GalleryLightbox
 export default function GalleryLightBox({
   initialImages,
 }) {
   const [currentIndex, setCurrentIndex] =
     useState(null);
+
+  // AI HELPED WITH THIS //
+  // Se synopsis om AI brug: GalleryLightbox
 
   const openLightbox = (index) =>
     setCurrentIndex(index);
@@ -38,12 +39,11 @@ export default function GalleryLightBox({
         initialImages.length,
     );
   };
-
+  ///////
   const selectedImage =
     currentIndex !== null
       ? initialImages[currentIndex]
       : null;
-  ///////
 
   return (
     <div className="gallery-img-wrapper">

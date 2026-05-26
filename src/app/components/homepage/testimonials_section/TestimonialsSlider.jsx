@@ -5,6 +5,8 @@ import {
 } from "next/navigation";
 import Testiment from "./Testiment";
 
+// AI HELPED WITH THIS
+// Se synopsis om AI brug: TestimonialsSlider.jsx
 const TestimonialSlider = ({ testimonials }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -12,8 +14,7 @@ const TestimonialSlider = ({ testimonials }) => {
   const activeTestament = Number(
     searchParams.get("testimonials") || "0",
   );
-  // AI HELPED WITH THIS
-  // Se synopsis om AI brug: TestimonialsSlider.jsx
+
   const handleButtonClick = (targetIndex) => {
     router.push(`?testimonials=${targetIndex}`, {
       scroll: false,
