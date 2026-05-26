@@ -38,6 +38,7 @@ const CommentForm = ({ eventId }) => {
 
   const onSubmit = async (data) => {
     /* AI HJALP MED DETTE: MEDTAG DATA FRA POSTCOMMENT */
+    /* se synopsis om AI brug: Single Event */
     const result = await PostComment({
       eventId,
       name: data.name,

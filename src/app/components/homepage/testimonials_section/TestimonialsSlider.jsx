@@ -39,6 +39,7 @@ const TestimonialSlider = ({ testimonials }) => {
 
       <div className="flex justify-center gap-4 w-full mt-small-medium">
         {/* AI HELPED WITH SYNTAX */}
+        {/* se synopsis om AI brug: Testimonials */}
         {testimonials.map((_, index) => (
           <button
             key={index}
@@ -53,6 +54,7 @@ const TestimonialSlider = ({ testimonials }) => {
             aria-label={`Show testimonial ${index + 1}`}
           />
         ))}
+        {/* *********************** */}
       </div>
     </div>
   );

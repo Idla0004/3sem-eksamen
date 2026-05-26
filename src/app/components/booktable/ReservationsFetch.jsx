@@ -8,6 +8,7 @@ export async function ReservationsFetch({
     );
 
     /* AI HELPED WITH THIS */
+    /* se synopsis om AI brug: Book Table */
     const fetchReservations =
       await response.json();
     const reserved = fetchReservations

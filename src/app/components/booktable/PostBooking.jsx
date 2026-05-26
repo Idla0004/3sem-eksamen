@@ -33,6 +33,7 @@ export async function PostBooking({
     );
 
     /* AI HELPED WITH THIS: */
+    /* se synopsis om AI brug: POSTs */
     if (!response.ok) {
       const errorComment = await response.json();
       return {

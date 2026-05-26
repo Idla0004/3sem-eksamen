@@ -15,6 +15,7 @@ export async function PostMailInfo({ email }) {
       },
     );
     /* AI HELPED WITH THIS: */
+    /* se synopsis om AI brug: POSTs */
     if (!response.ok) {
       if (response.status === 409) {
         return {

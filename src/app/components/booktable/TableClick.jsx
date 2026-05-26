@@ -6,6 +6,7 @@ const TableClick = ({
   reserved,
 }) => {
   /* AI HELPED WITH THIS FUNCTION: */
+  /* se synopsis om AI brug: Book Table */
 
   const scrollToBookTableForm = () => {
     const formSection = document.querySelector(
@@ -29,6 +30,7 @@ const TableClick = ({
     <div
       className="relative text-center cursor-pointer"
       /* AI HELPED WITH THIS SYNTAX: */
+      /* se synopsis om AI brug: Book Table */
       onClick={() => {
         if (reserved.includes(tableNumber)) {
           alert(

@@ -17,6 +17,7 @@ export async function PostContactInfo({
           name,
           content: contactMessage,
           /* AI HELPED WITH THIS */
+          /* se synopsis om AI brug: POSTs */
           date: new Date().toISOString(),
           /************/
           email,
@@ -24,6 +25,7 @@ export async function PostContactInfo({
       },
     );
     /* AI HELPED WITH THIS: */
+    /* se synopsis om AI brug: POSTs */
     if (!response.ok) {
       const errorComment = await response.json();
       return {

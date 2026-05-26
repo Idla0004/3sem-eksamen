@@ -60,6 +60,7 @@ const BookTableForm = ({
   });
 
   /* AI HELPED WITH THIS FUNCTION: */
+  /* se synopsis om AI brug: Book Table */
   useEffect(() => {
     const diffPageRoute =
       window.location.pathname;
@@ -78,6 +79,7 @@ const BookTableForm = ({
 
   const onSubmit = async (data) => {
     /* AI HJALP MED DETTE: MEDTAG DATA FRA POST komponent */
+    /* se synopsis om AI brug: Forms */
     const result = await PostBooking({
       name: data.name,
       email: data.email,
@@ -238,6 +240,7 @@ const BookTableForm = ({
           <select
             {...register("choiceNight")}
             /* AI HELPED WITH THIS SYNTAX: */
+            /* se synopsis om AI brug: Book Table */
             onChange={(night) => {
               const selectedNight =
                 night.target.value;

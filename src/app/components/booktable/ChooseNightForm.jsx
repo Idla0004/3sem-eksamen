@@ -21,6 +21,7 @@ const ChooseNightForm = ({ events = [] }) => {
   });
 
   /* AI HELPED WITH THIS FUNCTION: */
+  /* se synopsis om AI brug: Book Table */
   useEffect(() => {
     const diffPageRoute =
       window.location.pathname;
@@ -46,6 +47,7 @@ const ChooseNightForm = ({ events = [] }) => {
         <select
           {...register("choiceNight")}
           /* AI HELPED WITH THIS SYNTAX: */
+          /* se synopsis om AI brug: Book Table */
           onChange={(night) => {
             const selectedNight =
               night.target.value;

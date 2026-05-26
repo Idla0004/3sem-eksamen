@@ -4,6 +4,7 @@ import TableClick from "./TableClick";
 
 const Tables = async ({ eventId }) => {
   /* AI HELPED WITH THIS */
+  /* se synopsis om AI brug: Book table */
   const reserved = await ReservationsFetch({
     eventId,
   });
