@@ -1,6 +1,6 @@
 import HomeHeadlines from "../HomeHeadlines";
 import TrackPlayer from "./TrackPlayer";
-import Artists from "./ArtistCarousel";
+import Artists from "./Artists";
 import { Suspense } from "react";
 
 const TrackSection = () => {

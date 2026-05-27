@@ -4,7 +4,7 @@ import Image from "next/image";
 import { BiSolidLeftArrow } from "react-icons/bi";
 import { BiSolidRightArrow } from "react-icons/bi";
 
-const ArtistCarousel = ({
+const Artists = ({
   songs = [],
   setCurrentSong,
   setisPlaying,
@@ -109,4 +109,4 @@ const ArtistCarousel = ({
   );
 };
 
-export default ArtistCarousel;
+export default Artists;
