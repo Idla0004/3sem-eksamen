@@ -1,5 +1,5 @@
 "use client";
-import Artists from "./Artists";
+import ArtistCarousel from "./ArtistCarousel";
 import Player from "./Player";
 import Image from "next/image";
 import {
@@ -112,7 +112,7 @@ const TrackPlayer = () => {
           />
         </div>
       </div>
-      <Artists
+      <ArtistCarousel
         songs={songs}
         setCurrentSong={setCurrentSong}
         setisPlaying={setisPlaying}

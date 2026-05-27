@@ -36,6 +36,10 @@ const Player = ({
       audioprogress * duration;
   };
 
+  const progressPercent = duration
+    ? (currentTime / duration) * 100
+    : 0;
+
   const prevSong = () => {
     const index = songs.findIndex(
       (x) => x.title == currentSong.title,
@@ -104,10 +108,6 @@ const Player = ({
   };
   ///////////////////////////////
 
-  const progressPercent = duration
-    ? (currentTime / duration) * 100
-    : 0;
-
   return (
     <div className="music-container flex flex-col text-center mx-auto px-8 w-full">
       <div className="title mb-10 font-bold text-xl text-left">
@@ -159,8 +159,6 @@ const Player = ({
           />
         </div>
         <div className="volume-container flex items-center gap-2 group text-2xl pt-5 m-auto md:pt-0 md:m-0">
-          {/* AI HELPED WITH THIS */}
-          {/* Se synopsis om AI brug: Player.jsx*/}
           <button
             onClick={toggleMute}
             className="focus:outline-none text-2xl hover:text-trackbg"
@@ -171,7 +169,6 @@ const Player = ({
               <FaVolumeUp />
             )}
           </button>
-          {/* ////////////// */}
           <input
             type="range"
             min="0"
